@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    font-family: "Poppins";
+}
+.container{
+    background: url(./images/5559852.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title{
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: white;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+.title h6{
+    font-weight: 400;
+}
+.calculator{
+    background-color: #333;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    position: relative;
+    left: 568px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.input-box{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column
+}
+#display-area{
+    position: relative;
+    top: 0;
+    width: 350px;
+    height: 50px;
+    padding-top: 10px;
+    text-align: right;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 10px;
+}
+.input-box input{
+    text-align: right;
+    width: 350px;
+    padding-top: 10px;
+    font-size: 18px;
+    height: 50px;
+    font-weight: 500;
+    background-color: #333;
+    letter-spacing: 1px;
+    color: rgb(216, 215, 215);
+    border: none;
+    outline: none;
+}
+.calculator-buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.is-equal{
+    grid-column: 4 / 4;
+    grid-row: 4/ 6;
+    border-bottom-right-radius: 20px;
+    background: #008ee0;
+    color: white;
+    transition: .4s;
+    cursor: pointer;
+}
+.is-equal:hover{
+    background: #00a2ff;
+}
+.is-clear{
+    grid-column: span 2;
+    background: linear-gradient(250deg, #09c6f9, #1566e9);
+    color: white;
+    cursor: pointer;
+}
+.is-clear:hover{
+    background:linear-gradient(180deg, #09c6f9, #1f70f3);
+    transition: 0.4s ease-in-out;
+}
+button{
+    padding: 25px;
+    font-size: 20px;
+    border: 0.5px solid rgb(116, 116, 116);
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+button:hover{
+    background-color: rgb(211, 211, 211);
+}
+.is-zero{
+    border-bottom-left-radius: 20px;
+}
+.is-delete{
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.is-delete:hover{
+    background: linear-gradient(300deg, #a40606,#d92a24);
+    color: white;
+}
